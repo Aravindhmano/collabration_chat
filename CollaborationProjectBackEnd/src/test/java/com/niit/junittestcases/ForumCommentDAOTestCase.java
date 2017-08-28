@@ -43,10 +43,10 @@ public class ForumCommentDAOTestCase {
 		int id=forumCommentDAO.getMaxForumCommentId();
 		forumComment.setForumCommentId(id+1);
 		forumComment.setForumId(1);
-		forumComment.setForumComment("Awesome forum content sir. Huge fan of you.");
+		forumComment.setForumComment("Nice forum");
 		forumComment.setCommentDate(new Date(System.currentTimeMillis()));
-		forumComment.setUserId("Suveen");
-		forumComment.setUsername("Suveen Kumar Vundavalli");
+		forumComment.setUserId("Aravind");
+		forumComment.setUsername("Aravind mano");
 		boolean flag = forumCommentDAO.save(forumComment);
 		assertEquals("createForumCommentTestCase", true, flag);
 	}
@@ -57,10 +57,10 @@ public class ForumCommentDAOTestCase {
 		//int id=forumCommentDAO.getMaxForumCommentId();
 		forumComment.setForumCommentId(id+1);
 		forumComment.setForumId(1);
-		forumComment.setForumComment("Awesome forum content sir. Huge fan of you.");
+		forumComment.setForumComment("Awesome forum");
 		forumComment.setCommentDate(new Date(System.currentTimeMillis()));
-		forumComment.setUserId("Suveen");
-		forumComment.setUsername("Suveen Kumar Vundavalli");
+		forumComment.setUserId("Aravind");
+		forumComment.setUsername("Aravind mano");
 		boolean flag = forumCommentDAO.update(forumComment);
 		assertEquals("createForumCommentTestCase", true, flag);
 	}

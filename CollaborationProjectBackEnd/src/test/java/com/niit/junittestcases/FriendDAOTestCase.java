@@ -38,7 +38,7 @@ public class FriendDAOTestCase {
 	@Test
 	public void saveFriendTestCase(){
 		friend.setUserId("postman1");
-		friend.setFriendId("Suveen");
+		friend.setFriendId("Aravind");
 		friend.setStatus("A");
 		boolean flag = friendDAO.save(friend);
 		assertEquals("saveFriendTestCase", true, flag);
@@ -46,13 +46,13 @@ public class FriendDAOTestCase {
 	
 	//@Test
 	public void deleteFriendTestCase(){
-		boolean flag = friendDAO.delete("postman1", "Suveen");
+		boolean flag = friendDAO.delete("postman1", "Aravind");
 		assertEquals("deleteFriendTestCase", true, flag);
 	}
 	
 	//@Test
 	public void getMyFriendsTestCase(){
-		int size = friendDAO.getMyFriends("Suveen").size();
+		int size = friendDAO.getMyFriends("Aravind").size();
 		assertEquals("getMyFriendsTestCase", 2, size);
 	}
 }

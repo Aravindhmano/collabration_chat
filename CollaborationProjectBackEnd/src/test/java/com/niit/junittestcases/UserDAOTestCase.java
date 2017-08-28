@@ -39,12 +39,12 @@ public class UserDAOTestCase {
 
 	// @Test
 	public void saveUserTestCase() {
-		user.setUserid("suveen");
-		user.setEmail("suveenkumar.vundavalli@gmail.com");
-		user.setFirstname("Suveen Kumar");
-		user.setLastname("Vundavalli");
+		user.setUserid("Aravind");
+		user.setEmail("aravindhniit@gmail.com");
+		user.setFirstname("Aravind");
+		user.setLastname("mano");
 		user.setIsOnline("true");
-		user.setPassword("suveen");
+		user.setPassword("aravind");
 		user.setRole("ROLE_USER");
 		user.setStatus("NA");
 		boolean flag = userDAO.save(user);
@@ -53,12 +53,12 @@ public class UserDAOTestCase {
 
 	// @Test
 	public void updateUserTestCase() {
-		user.setUserid("Suveen");
-		user.setEmail("suveenkumar.vundavalli@gmail.com");
-		user.setFirstname("Suveen Kumar");
-		user.setLastname("Vundavalli");
+		user.setUserid("Aravind");
+		user.setEmail("aravindhniit@gmail.com");
+		user.setFirstname("Aravind");
+		user.setLastname("mano");
 		user.setIsOnline("true");
-		user.setPassword("Suveen");
+		user.setPassword("aravind");
 		user.setRole("ROLE_ADMIN");
 		user.setStatus("NA");
 		boolean flag = userDAO.update(user);
@@ -73,20 +73,20 @@ public class UserDAOTestCase {
 
 	// @Test
 	public void validateTestCase() {
-		User user = userDAO.validate("Suveen", "Suveen");
+		User user = userDAO.validate("Aravind", "Aravind");
 		String firstname = user.getFirstname();
-		assertEquals("validateTestCase", "Suveen Kumar", firstname);
+		assertEquals("validateTestCase", "Aravind mano", firstname);
 	}
 
 	@Test
 	public void getUserByIdTestCase() {
-		User user = userDAO.getUserById("suveen");
+		User user = userDAO.getUserById("Aravind");
 		String firstname = user.getFirstname();
-		assertEquals("validateTestCase", "Suveen Kumar", firstname);
+		assertEquals("validateTestCase", "Aravind mano", firstname);
 	}
 	@Test
 	public void getNotMyFriendsListTestCase() {
-		List<User> users123 = userDAO.notMyFriendList("Suveen");
+		List<User> users123 = userDAO.notMyFriendList("Aravind");
 		int size = users123.size();
 		assertEquals("getNotMyFriendsListTestCase", 9, size);
 	}

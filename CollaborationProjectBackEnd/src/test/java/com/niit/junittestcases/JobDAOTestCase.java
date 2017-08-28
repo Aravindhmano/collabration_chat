@@ -58,7 +58,7 @@ public class JobDAOTestCase {
 		int id = jobDAO.getMaxJobApplicationId();
 		jobApplied.setJobAppliedId(id+1);
 		jobApplied.setJobId("SoftwareDeveloper2");
-		jobApplied.setUserId("suveen");
+		jobApplied.setUserId("Aravind");
 		jobApplied.setDateApplied(new Date(System.currentTimeMillis()));
 		jobApplied.setStatus("N");
 		jobApplied.setRemarks("Under Verification");
@@ -76,7 +76,7 @@ public class JobDAOTestCase {
 	
 	@Test
 	public void listJobsAppliedTestCase(){
-		int size = jobDAO.listAllJobsAppliedByMe("suveen").size();
+		int size = jobDAO.listAllJobsAppliedByMe("Aravind").size();
 		assertEquals("listAllJobsTestCase", 2, size);
 	}
 	

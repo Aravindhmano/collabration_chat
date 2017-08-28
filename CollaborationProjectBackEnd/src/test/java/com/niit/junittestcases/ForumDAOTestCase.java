@@ -45,7 +45,7 @@ public class ForumDAOTestCase {
 		forum.setForumName("TestCase2" + (id + 1));
 		forum.setForumContent("Test from testcase" + (id + 1));
 		forum.setCreateDate(new Date(System.currentTimeMillis()));
-		forum.setUserId("Suveen");
+		forum.setUserId("Aravind");
 		boolean flag = forumDAO.save(forum);
 		assertEquals("createForumTestCase", true, flag);
 	}
@@ -56,7 +56,7 @@ public class ForumDAOTestCase {
 		forum.setForumName("TestCase2");
 		forum.setForumContent("Update Test from testcase2");
 		forum.setCreateDate(new Date(System.currentTimeMillis()));
-		forum.setUserId("Suveen");
+		forum.setUserId("Aravind");
 		boolean flag = forumDAO.update(forum);
 		assertEquals("updateForumTestCase", true, flag);
 	}

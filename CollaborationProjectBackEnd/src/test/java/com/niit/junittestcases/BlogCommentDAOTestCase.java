@@ -43,10 +43,10 @@ public class BlogCommentDAOTestCase {
 		int id=blogCommentDAO.getMaxBlogCommentId();
 		blogComment.setBlogCommentId(id+1);
 		blogComment.setBlogId(1);
-		blogComment.setBlogComment("Awesome blog content sir. Huge fan of you.");
+		blogComment.setBlogComment("nice blog");
 		blogComment.setCommentDate(new Date(System.currentTimeMillis()));
-		blogComment.setUserId("Suveen");
-		blogComment.setUsername("Suveen Kumar Vundavalli");
+		blogComment.setUserId("Aravind");
+		blogComment.setUsername("Aravind mano");
 		boolean flag = blogCommentDAO.save(blogComment);
 		assertEquals("createBlogCommentTestCase", true, flag);
 	}
@@ -57,10 +57,10 @@ public class BlogCommentDAOTestCase {
 		//int id=blogCommentDAO.getMaxBlogCommentId();
 		blogComment.setBlogCommentId(id+1);
 		blogComment.setBlogId(1);
-		blogComment.setBlogComment("Awesome blog content sir. Huge fan of you.");
+		blogComment.setBlogComment("nice blog ");
 		blogComment.setCommentDate(new Date(System.currentTimeMillis()));
-		blogComment.setUserId("Suveen");
-		blogComment.setUsername("Suveen Kumar Vundavalli");
+		blogComment.setUserId("Aravind");
+		blogComment.setUsername("Aravind mano");
 		boolean flag = blogCommentDAO.update(blogComment);
 		assertEquals("createBlogCommentTestCase", true, flag);
 	}
